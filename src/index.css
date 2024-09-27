@@ -1,0 +1,38 @@
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: none !important; /* Désactive les flèches */
+  margin: none !important;
+}
+
+.swiper-button-prev, .swiper-button-next, .swiper-pagination .is-blog{
+    position : static!important;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    margin-top:0!important;
+}
+
+.swiper-pagination-bullet, .swiper-pagination-bullet-active{
+    background-color:black!important;
+}
+.swiper-pagination-bullet, .swiper-pagination-bullet-active{
+    background-color:black!important;
+}
+
+/* Modifier la couleur de fond des bullets */
+.swiper-pagination.is-join-us .swiper-pagination-bullet {
+    background-color: white!important;
+}
+
+/* Modifier la couleur de fond du bullet actif */
+.swiper-pagination.is-join-us .swiper-pagination-bullet-active {
+    background-color: white!important;
+}
+
+.swiper-pagination.is-blog{
+    position:static!important;
+}
+.slider-blog_text-content{
+    width:100%!important;
+}
