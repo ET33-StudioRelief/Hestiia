@@ -8,6 +8,7 @@ export function swiperBlog() {
     direction: 'horizontal',
     slidesPerView: 1,
     spaceBetween: 30,
+    centeredSlides: true,
     loop: true,
     speed: 200,
     navigation: {
@@ -18,8 +19,8 @@ export function swiperBlog() {
       el: '.swiper-pagination',
     },
     breakpoints: {
-      // Pour les écrans de taille supérieure à 767px
-      1200: {
+      // Pour les écrans de taille supérieure à 1200px
+      800: {
         slidesPerView: 2,
         spaceBetween: 30, // Ajustement de l'espacement pour les grands écrans
       },
@@ -33,6 +34,23 @@ export function swiperJoin() {
     slidesPerView: 1,
     loop: true,
     speed: 200,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+}
+
+export function swiperTestimonial() {
+  new Swiper('.swiper-testimonial', {
+    direction: 'horizontal',
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    speed: 200,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
     pagination: {
       el: '.swiper-pagination',
     },

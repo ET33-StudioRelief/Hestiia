@@ -1,7 +1,7 @@
 import './index.css';
 
 import { greetUser } from '$utils/greet';
-import { swiperBlog, swiperJoin } from '$utils/swiper';
+import { swiperBlog, swiperJoin, swiperTestimonial } from '$utils/swiper';
 
 window.Webflow ||= [];
 window.Webflow.push(() => {
@@ -9,4 +9,5 @@ window.Webflow.push(() => {
   greetUser(name);
   swiperBlog();
   swiperJoin();
+  swiperTestimonial();
 });
