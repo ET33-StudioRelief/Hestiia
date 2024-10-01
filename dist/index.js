@@ -9681,11 +9681,10 @@
 
   // src/utils/swiper.ts
   function swiperBlog() {
-    new Swiper(".swiper-blog", {
+    new Swiper(".slider-blog", {
       direction: "horizontal",
       slidesPerView: 1,
       spaceBetween: 30,
-      centeredSlides: true,
       loop: true,
       speed: 200,
       navigation: {
@@ -9699,7 +9698,7 @@
         // Pour les écrans de taille supérieure à 1200px
         800: {
           slidesPerView: 2,
-          spaceBetween: 30
+          spaceBetween: 50
           // Ajustement de l'espacement pour les grands écrans
         }
       }
@@ -9709,6 +9708,7 @@
     new Swiper(".mission-slider", {
       direction: "horizontal",
       slidesPerView: 1,
+      autoplay: true,
       loop: true,
       speed: 200,
       pagination: {

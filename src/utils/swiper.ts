@@ -4,11 +4,10 @@ import 'swiper/css/bundle';
 import Swiper from 'swiper/bundle';
 
 export function swiperBlog() {
-  new Swiper('.swiper-blog', {
+  new Swiper('.slider-blog', {
     direction: 'horizontal',
     slidesPerView: 1,
     spaceBetween: 30,
-    centeredSlides: true,
     loop: true,
     speed: 200,
     navigation: {
@@ -22,7 +21,7 @@ export function swiperBlog() {
       // Pour les écrans de taille supérieure à 1200px
       800: {
         slidesPerView: 2,
-        spaceBetween: 30, // Ajustement de l'espacement pour les grands écrans
+        spaceBetween: 50, // Ajustement de l'espacement pour les grands écrans
       },
     },
   });
@@ -32,6 +31,7 @@ export function swiperJoin() {
   new Swiper('.mission-slider', {
     direction: 'horizontal',
     slidesPerView: 1,
+    autoplay: true,
     loop: true,
     speed: 200,
     pagination: {

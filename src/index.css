@@ -33,7 +33,8 @@
 .swiper-pagination.is-blog{
     position:static!important;
 }
-.slider-blog_text-content{
-    width:100%!important;
-}
 
+
+.swiper-pagination.is-testimonial{
+    position:static!important;
+}

@@ -30,8 +30,8 @@
 .swiper-pagination.is-blog {
   position: static !important;
 }
-.slider-blog_text-content {
-  width: 100% !important;
+.swiper-pagination.is-testimonial {
+  position: static !important;
 }
 
 /* node_modules/.pnpm/swiper@11.1.14/node_modules/swiper/swiper-bundle.css */
