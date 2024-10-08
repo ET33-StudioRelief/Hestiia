@@ -44,7 +44,7 @@ export function swiperTestimonial() {
   new Swiper('.swiper-testimonial', {
     direction: 'horizontal',
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 10,
     loop: true,
     speed: 200,
     centeredSlides: true, // Centrer les slides pour les très grands écrans
