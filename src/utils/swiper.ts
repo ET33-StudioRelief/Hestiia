@@ -43,7 +43,7 @@ export function swiperJoin() {
 export function swiperTestimonial() {
   new Swiper('.swiper-testimonial', {
     direction: 'horizontal',
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
     speed: 200,
@@ -53,6 +53,17 @@ export function swiperTestimonial() {
     },
     pagination: {
       el: '.swiper-pagination',
+    },
+    breakpoints: {
+      // Pour les écrans de taille supérieure à 800px
+      800: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
     },
   });
 }
