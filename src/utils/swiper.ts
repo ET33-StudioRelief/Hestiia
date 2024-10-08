@@ -47,6 +47,7 @@ export function swiperTestimonial() {
     spaceBetween: 30,
     loop: true,
     speed: 200,
+    centeredSlides: true, // Centrer les slides pour les très grands écrans
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
