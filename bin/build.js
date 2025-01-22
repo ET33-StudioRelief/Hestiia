@@ -10,7 +10,6 @@ const PRODUCTION = process.env.NODE_ENV === 'production';
 const ENTRY_POINTS = ['src/index.ts'];
 
 // Config dev serving
-const LIVE_RELOAD = !PRODUCTION;
 const SERVE_PORT = 3000;
 const SERVE_ORIGIN = `http://localhost:${SERVE_PORT}`;
 
@@ -22,11 +21,15 @@ const context = await esbuild.context({
   minify: PRODUCTION,
   sourcemap: !PRODUCTION,
   target: PRODUCTION ? 'es2020' : 'esnext',
-  inject: LIVE_RELOAD ? ['./bin/live-reload.js'] : undefined,
+  // Ne pas injecter le live-reload en production
+  inject: PRODUCTION ? undefined : ['./bin/live-reload.js'],
   define: {
-    SERVE_ORIGIN: JSON.stringify(SERVE_ORIGIN),
+    // Définir SERVE_ORIGIN comme null en production
+    SERVE_ORIGIN: PRODUCTION ? 'null' : JSON.stringify(SERVE_ORIGIN),
   },
 });
+
+// ... existing code ...
 
 // Build files in prod
 if (PRODUCTION) {
