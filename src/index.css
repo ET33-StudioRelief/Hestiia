@@ -1,3 +1,4 @@
+/* Swiper */
 .swiper-button-prev::after,
 .swiper-button-next::after {
   content: none !important; /* Désactive les flèches */
