@@ -46,3 +46,31 @@
 .swiper-pagination.is-testimonial {
   position: static !important;
 }
+
+.swiper-wrapper {
+  position: static !important;
+}
+
+.blog-post_rich-text img {
+  border-radius: 20px;
+}
+
+.features_logo-plus-content {
+  width: 4rem !important;
+}
+
+.blog-post_content img {
+  border-radius: 1.25rem;
+}
+.toc-toggle-link {
+  display: block;
+  margin: 10px 0;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.toc-toggle-link:hover {
+  text-decoration: underline;
+}

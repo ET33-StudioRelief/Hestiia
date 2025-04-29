@@ -1,10 +1,9 @@
 import './index.css';
 
-import { swiperBlog, swiperJoin, swiperTestimonial } from '$utils/swiper';
+import { swiperBlog, swiperJoin } from '$utils/swiper';
 
 window.Webflow ||= [];
 window.Webflow.push(() => {
   swiperBlog();
   swiperJoin();
-  swiperTestimonial();
 });

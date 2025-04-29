@@ -40,7 +40,7 @@ export function swiperJoin() {
   });
 }
 
-export function swiperTestimonial() {
+/*export function swiperTestimonial() {
   new Swiper('.swiper-testimonial', {
     direction: 'horizontal',
     slidesPerView: 1,
@@ -67,4 +67,4 @@ export function swiperTestimonial() {
       },
     },
   });
-}
+}*/
